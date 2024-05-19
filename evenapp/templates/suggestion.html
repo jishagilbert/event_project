@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .box{
+ background-image:url("https://assets.milestoneinternet.com/cdn-cgi/image/f=auto/destination-weddings-travel-group/siteimages/weddings-at-iberostar-hotels-resorts.jpg?width=500&height=376");
+    background-size: cover;
+    background-repeat: no-repeat;
+            height: 140vh;
+    }
+    .demo{
+    background-image:url("");
+    width:60%;
+    font-size:20px;
+     border: 2px ;
+  padding: 50px;
+  margin: 0 auto;
+  text-align:center;
+
+
+    }
+    button{
+    background-color:yellow;}
+    .card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid yellow;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size:15px;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+.card p:first-child {
+    margin-top: 0;
+}
+
+.card p:last-child {
+    margin-bottom: 0;
+}
+
+
+</style>
+
+<body>
+<div class="box">
+
+
+<h1 style=" color:darkred; text-align:center; font-family: Arial Black, sans-serif;margin-top:0;"><b>Submit a Review Here</b></h1><br>
+    <p style="color:white; line-height: 1.5; text-align:center;font-size:15px;"><b>Suggestion makes a person perfect..... Here you can add anything ....Your opinion make Wonder World event more beautiful and powerful.We are welcoming your suggestion always and its our pleasure to make your events more creative and memmorable...</b></p>
+<div class="demo" >
+    <form method="post">
+       {% csrf_token %}
+         {{ form.as_p }}
+
+
+       <button type="submit">Submit</button>
+
+   </form>
+</div>
+    <div class="review">
+        <h2 style="color:white;"><b>Existing Reviews:</b></h2>
+    <div class="card-container">
+        {% for review in reviews %}
+        <div class="card">
+         <p><strong>{{ review.name }}</strong></p>
+           <p><strong>Rating:</strong> {{ review.rating }}</p>
+                <p><strong>Comment:</strong> {{ review.comment }}</p>
+        </div>
+        {% endfor %}
+
+        </div>
+        </div>
+</div>
+</body>
+{% endblock %}
+</html>

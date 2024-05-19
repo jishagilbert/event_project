@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+{% extends 'base.html' %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+ .box{
+        background-image:url("https://cdn0.weddingwire.in/vendor/2167/3_2/960/jpg/daytime-wedding-decoration-ideas_15_272167-157761069755915.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+            height: 140vh;}
+
+
+
+.body{display: flex;
+ flex-wrap: wrap;
+ gap: 15px;
+ width: 100%;}
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            width: 250px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .card h2 {
+            margin-top: 0;
+
+        }
+        .card p {
+            margin-bottom: 0;
+        }
+        h1{
+        padding:20;
+        margin-top:0;}
+    </style>
+</head>
+<body>
+<div class="box">
+    <h1 style="text-align:center; color:blue;"><b>OUR SERVICES</b></h1>
+
+
+
+<div class="card-container">
+        <div class="card">
+            <img src="https://miro.medium.com/v2/resize:fit:728/0*8-yBwY2_aDyFUnlt.jpg" alt="Image 1">
+            <div class="card-content">
+                <h2>Marrage Planning</h2>
+                <p>Your truly stress-free wedding planning experience begins with ur enthusiastic team. Our consultants put their art into planning perfection, but you still hold the final word.We will be there with you every step of the way</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://v3events.in/blog/wp-content/uploads/2023/01/o.jpeg" alt="Image 2">
+            <div class="card-content">
+                <h2>Destination Wedding</h2>
+                <p>Your wedding is one of the most significant milestones of your life and what's more romantic than jetting off to a beautiful location and celebrating the start of the rest your life amidst people you cherish with a destination wedding</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLTM25nWRVYLxTzgAoV9zXnr5gxUCE6y37TLtNsIxh3g&s" alt="Image 3">
+            <div class="card-content">
+                <h2>Wedding Decor</h2>
+                <p>We're a wedding styling company specializing in chic,elegant sets for weddings.Every kind of theme is made possible with one symbolic wave of our magic want to cherish and enhance your wedding</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://brideandbreakfast.ph/wp-content/uploads/2020/06/Wedding-Hosts-Deals-Fest-04.jpg" alt="Image 4">
+            <div class="card-content">
+                <h2>Host Services</h2>
+                <p>Every moment has a timeline and it takes a skilled wedding host,a modern day toastmaster,to keep it on track.We provide professional hosts for wedding at very cost effective rates to our clients.</p>
+            </div>
+        </div>
+    <div class="card">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/026/804/939/small_2x/close-up-of-a-birthday-celebration-with-a-beautifully-decorated-cake-colorful-candles-generative-ai-photo.jpg" alt="Image 4">
+            <div class="card-content">
+                <h2>Birthday Bash</h2>
+                <p>Every birthday is beautiful.We are providing the best birthday bash to our client and its always special.Every kind of theme is made possible with one symbolic wave of our magic want to cherish and enhance your wedding</p>
+            </div>
+        </div>
+    <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqqNt_-qa9BWskCBQRJn8t4y9PmrF-3a16_qB6bNNJ6w&s" alt="Image 4">
+            <div class="card-content">
+                <h2>Govt.Events</h2>
+                <p>Providing the best event service for Govt also.Our team made every theme with full hardworking and dedication. Always providing the Govt.events and providing the best host for every program.</p>
+            </div>
+        </div>
+    <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd7I9SKYm6K2HBeNEZ5_vnv-4CP6lrbIqOwnHYaHybBg&s" alt="Image 4">
+            <div class="card-content">
+                <h2>Bachelor's Party</h2>
+                <p>Party is always special especially for bachelors. wonder world events provides the best bachelor party services for everyone .We create our clinet's idea exactly what they want.</p>
+            </div>
+        </div>
+
+
+
+</div></div>
+</body>
+{% endblock %}
+</html>

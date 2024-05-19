@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+
+        .bdy{
+
+
+     background-image:url("https://static.vecteezy.com/system/resources/previews/031/729/045/large_2x/wedding-rings-on-romantic-background-free-photo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+            height: 110vh;
+    }
+        h1{
+        font-family:Impact, Arial Black, sans-serif;
+        text-align:center;
+        color:white;
+        padding:20;
+        margin-top:0;
+        }
+         .form{
+       margin-left: 450px;
+       padding-top: 50px;
+       padding-right:50px;
+
+       height:800px;
+       width:650px;
+       text-align:center;
+       font-size:20PX;
+       background-image:url("https://static.vecteezy.com/system/resources/previews/023/846/800/large_2x/the-wedding-ring-with-ai-generated-free-photo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+            height: 90vh;
+
+
+
+       }
+       #fo{
+
+       }
+
+       button{
+       background-color:yellow;
+       margin-left:40px;}
+    </style>
+</head>
+<body>
+<div class="bdy">
+
+    <h1><b><i><u>Register Your Dream Here...</u></i></b></h1><br><br>
+    <div id="fo" class="form">
+    <form style="width: 50%; margin: 0 auto;" method="post">
+        {% csrf_token %}
+        {{register}}
+        <br>
+        <button type="submit">REGISTER</button>
+    </form>
+</div>
+
+</div>
+</body>
+{% endblock %}
+</html>

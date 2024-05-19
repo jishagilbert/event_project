@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+
+        .contact-card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+
+
+        }
+        h1{
+        color:darkviolet;
+        font-family: Pacifico;
+        text-align:center;}
+        body{
+       background: linear-gradient(to bottom, #ffffff 0%, #ccffcc 100%);}
+
+
+        .contact-card {
+
+  border-radius: 5px;
+  color:white;
+  font-family: Times New Roman ;
+  padding: 20px;
+  text-align:center;
+margin: 30px;
+  background-color:black ;
+  display: inline-block; /* Display the cards inline */
+   width: 300px;
+}
+
+.contact-card p {
+  margin: 10px 0;
+}
+
+.contact-card p:first-child {
+  font-weight: bold;
+}
+        .company_info{
+        background-color:white;
+        width:100%;
+        height:450px;
+        margin-right:10px;
+        text-align:center;
+        float:left;
+        }
+
+
+
+.container{
+ position: relative;}
+        .body{
+        float:right;}
+
+    </style>
+</head>
+<body>
+
+
+<h1><b>Contact Us</b></h1><br>
+<div class="container">
+<div class="body">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.835350332462!2d76.89511697477428!3d8.515362091526898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bd7e2688b5e1%3A0x14bc45b8acff2e10!2sLuLu%20Mall%20Thiruvananthapuram!5e0!3m2!1sen!2sin!4v1713953211691!5m2!1sen!2sin" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+
+    <div class="company-info">
+    <h2 style="color:blue;">Wonder World Event Management</h2>
+
+    <p>The best event management company in kerala</p>
+
+
+    <p style="color:green;">Wonder World Events, Second Floor,Lulu mall, Trivandrum</p><br>
+        <a href="mailto:jishabijin1997@gmail.com" class="email" onclick="return confirm('Are you sure you want to send an email?')">Email: jishabijin1997@gmail.com</a>
+
+          <p>Phone: 0470 260 2586</p><br>
+    <p>Hours: Open.8.00am Closes.7.pm </p>
+
+
+</div>
+
+
+</div>
+
+ {% for contact_info in key %}
+ <div class="contact-card">
+
+<h3>{{contact_info.place }}</h3>
+     <p>{{ contact_info.address }}</p>
+        <p>Phone: {{ contact_info.phone }}</p>
+     <p><b>Mobile: {{ contact_info.mobile }}</b></p>
+
+    </div>
+{% endfor %}
+
+</body>
+{% endblock %}
+</html>

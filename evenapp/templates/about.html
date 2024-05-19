@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+{% extends 'base.html' %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+    .box{
+        background-image:url("https://i.pinimg.com/736x/58/bf/74/58bf7437e0585c0863c3b12d2de5d0b3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+         height: 75vh;
+
+
+    }
+     .col-md-3 img {
+        border-radius: 50%;}
+
+
+
+
+.progress-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.progress-wrapper {
+  text-align: center;
+
+}
+
+.progress-ring {
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+
+.progress-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  clip: rect(0, 120px, 120px, 60px);
+  background: violet;
+  position: absolute;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: blue;
+}
+
+@keyframes progress {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.progress-circle {
+  animation: progress 4s linear infinite;
+}
+      h1{
+      padding:20;
+        margin-top:0;}
+
+
+  </style>
+</head>
+<body>
+<div class="box">
+    <h1 style="text-align:center; color:black;"><b>Know More About Us</b></h1>
+
+<div class="container">
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZXZlbnQlMjBwbGFubmluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="Los Angeles" style="width:100%; height:500px;">
+
+        <div class="carousel-caption">
+        <h1 style="color:#2F4F4F;"><b>WONDER WORLD EVENT MANAGEMENT</b> </h1>
+
+         <p style="color:black"><b> Wonder World Event management is the strategic and systematic process of planning, organizing, coordinating, and executing various types of events to achieve specific objectives and create memorable experiences
+             </b></p>
+       </div>
+      </div>
+
+
+
+
+
+      <div class="item">
+        <img src="https://sg.eventionapp.com/wp-content/uploads/2023/10/prepared-wedding-hall-1024x683.jpg" alt="Chicago" style="width:100%; height:500px;">
+
+        <div class="carousel-caption">
+                <h1 style="color:#2F4F4F;"><b>WONDER WORLD EVENT MANAGEMENT</b> </h1>
+
+            <p style="color:black"><b> Wonder World Event management is the strategic and systematic process of planning, organizing, coordinating, and executing various types of events to achieve specific objectives and create memorable experiences
+            </b></p>
+       </div>
+      </div>
+
+
+
+      <div class="item">
+        <img src="https://aspeneventworks.com/app/uploads/2016/11/home_2.jpg" alt="New york" style="width:100%; height:500px;">
+
+       <div class="carousel-caption">
+ <h1 style="color:#2F4F4F;"><b>WONDER WORLD EVENT MANAGEMENT</b> </h1>
+
+<p style="color:black"><b> Wonder World Event management is the strategic and systematic process of planning, organizing, coordinating, and executing various types of events to achieve specific objectives and create memorable experiences
+</b></p>
+       </div></div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+
+</div><br><br><br>
+
+
+<div class="row about_row">
+				<div class="col-lg-6">
+					<div class="about_content">
+
+						<div class="about_text">
+                             <p style="font-size:23px;">Wonder world Weddings and Events is the perfect choice when having to provide a solution to all your event planning/coordinating requirements. We pride ourselves in delivering clients with a customized event planning and coordination service tailored and suited to every need.Part of our brand DNA is the ability to discover our client's needs. We deep dive into their personalities and wishes. Through this relationship, we discover parts that are unique to them, but we are also able to expose deeper layers that they didn't know they wanted. The heart and soul of our team excels at an ultra-high level of workmanship and detail. We take pride in conceptualizing, planning and designing all key elements of our events in-house. This allows for unmatched quality control and ensures that the vision stays cohesive. </p>
+				</div>
+
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="about_image"><img src="https://www.brides.com/thmb/QZkHW3_5rnJrP23UHMKPLaYYjTw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sq-0220bbf12c2646e18409c941378b2baf.jpg"  height="450px" width="600px" alt=""></div>
+				</div>
+			</div>
+
+
+
+<div class="well text-center">
+    <h1 style="font-family:Cursive; color:blue;"><b>WelcOmE....</b></h1><br>
+
+    <div class="row">
+        <div class="col-md-3">
+            <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR82PgHbQWvp6H9BoYlLwfnyhp1M4L95x76hJoQA8K7eA&s" alt="css_logo" class="img-fluid" style="height:200px; width:250px;"></a>
+            <div class="card-body">
+                <h5 class="card-title"><b>The Idea</b></h5>
+                <p class="card-text" style="color:green;"><i>Based on your ideas,we will meticulously plan every event detail from concept design to venue selection to day of event production and co ordination</i> </p>
+            </div>
+        </div>
+        <div class="col-md-3" >
+            <a href="#"><img src= "https://img.freepik.com/premium-photo/exchange-rings-wedding-registration-marriage-bride-groom_118086-1335.jpg"  alt="ccs_logo" class="img-fluid" style="height:200px; width:250px;"  ></a>
+            <div class="card-body">
+                <h5 class="card-title"><b>More than 8 years</b></h5>
+                <p class="card-text" style="color:green;"><i>with over 8 years of experience in hospitality an events, we deliver first-class service and round the clock availability to all our clients</i> </p>
+            </div></div>
+            <div class="col-md-3">
+                <a href="#"><img src="https://image.marriage.com/advice/wp-content/uploads/2015/12/pre-wedding-ritual.jpg" alt="ccs_logo" class="img-fluid" style="height:200px; width:250px;"></a>
+                <div class="card-body">
+                    <h5 class="card-title"><b>Our Mission</b></h5>
+                    <p class="card-text" style="color:green;"><i>We are passionate about creating 'WOW' events for all our clients, and we create a beautiful experience that you and your guests will talk about for years to come</i> </p>
+                </div>
+            </div>
+
+         <div class="col-md-3">
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcYgLVZnYBDPtXVC8760q7iUY3qUEjV-Y7CdciP4ulgg&s" alt="ccs_logo" class="img-fluid" style="height:200px; width:250px;"></a>
+                <div class="card-body">
+                    <h5 class="card-title"><b>Our co-ordination</b></h5>
+                    <p class="card-text" style="color:green;"><i> We pride ourselves in delivering clients with a customized event planning and coordination service tailored and suited to every need.</i></p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 style="text-align:center;"><u><b>Meet Our Team</b></u></h2><br>
+
+<div class="row team_row">
+
+				<!-- Team Item -->
+				<div class="col-xl-3 col-md-6 team_col">
+					<div class="team_item d-flex flex-column align-items-center justify-content-start text-center">
+						<div class="team_image"><img src="https://i.pinimg.com/736x/ee/d3/03/eed303679e96d27a96cd4850f4e3fb4c.jpg" height="200px" width="250px" alt=""></div>
+						<div class="team_content">
+							<div class="team_title"><a href="#">Managing Director </a></div>
+							<div class="team_text">
+								<p><B>Hedrick David John</B></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Team Item -->
+				<div class="col-xl-3 col-md-6 team_col">
+					<div class="team_item d-flex flex-column align-items-center justify-content-start text-center">
+						<div class="team_image"><img src="https://eventacademy.com/wp-content/uploads/2020/06/Becoming-a-virtual-event-manager.jpg" height="200px" width="250px" alt=""></div>
+						<div class="team_content">
+							<div class="team_title"><a href="#">Event Field supervisor</a></div>
+							<div class="team_text">
+								<p><B>Elizabeth Williams</B></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Team Item -->
+				<div class="col-xl-3 col-md-6 team_col">
+					<div class="team_item d-flex flex-column align-items-center justify-content-start text-center">
+						<div class="team_image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF8-Q69X_2Dyd3g2LB_nJh_Uvy2hl5OIQ2i5avq5FbCg&s" height="200px" width="250px" alt=""></div>
+						<div class="team_content">
+							<div class="team_title"><a href="#">CUSTOMER SERVICE</a></div>
+							<div class="team_text">
+								<p><B>Michael James</B></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Team Item -->
+				<div class="col-xl-3 col-md-6 team_col">
+					<div class="team_item d-flex flex-column align-items-center justify-content-start text-center">
+						<div class="team_image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3zmkY9GnWTj591-2jYqdR8G9zDxJhcPudu_-C-H7hCw&s" height="200px" width="250px" alt=""></div>
+						<div class="team_content">
+							<div class="team_title"><a href="#">Event Art Supervisor</a></div>
+							<div class="team_text">
+								<p><B>Noah Smith</B></p>
+							</div>
+						</div>
+					</div>
+				</div></div><br><br>
+
+
+
+<div class="progress-row">
+  <div class="progress-wrapper">
+    <div class="progress-ring">
+      <div class="progress-circle"></div>
+      <div class="progress-text">Events:45862</div>
+    </div>
+  </div>
+  <div class="progress-wrapper">
+    <div class="progress-ring">
+      <div class="progress-circle"></div>
+      <div class="progress-text">coustomers:45869</div>
+    </div>
+  </div>
+  <div class="progress-wrapper">
+    <div class="progress-ring">
+      <div class="progress-circle"></div>
+      <div class="progress-text">Awards:250</div>
+    </div>
+  </div>
+</div><br><br>
+<iframe src="https://www.youtube.com/embed/eTl2Cxb74r0?si=O9IPy2tuiXToIvs4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="height:300px; width:550px;"></iframe>
+
+</body>
+{% endblock %}
+</html>
